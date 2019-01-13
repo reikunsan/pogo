@@ -1,5 +1,60 @@
+<!DOCTYPE html>
 <html>
-<body>
-<div>test</div>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <title>PoGo Raid Selatan Kota Jogja Quiz Winner Selector</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+      $(document).ready(function() {
+  $("#hit").click(function() {
+    $("#hasil").html("");
+    var w = $("input[name='w']").val();
+    var a = w.split(",");
+    var b = $("#b").find(":selected").text();
+    var t = parseInt(b);
+    var h = "";
+    var h2 = {};
+    $.each(a, function(key, value) {
+      h2[value] = 0;
+    });
+    for (var i = 1; i <= b; i++) {
+      var tmp = a[Math.floor(Math.random() * a.length)];
+      h2[tmp]++;
+      h += "random ke " + i + ": " + tmp + "<br/>";
+    }
+    h += '<br/>total kemunculan random:<br/>';
+    $.each(h2, function(key, value) {
+      h += key+": "+value+"<br/>";
+    });
+    $("#hasil").html(h);
+  });
+});
+    </script>
+    <style>
+      a.tombol {
+        background: blue;
+        color: white;
+        text-decoration: none;
+        padding: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      daftar kandidat pemenang: <input type="text" name="w" value="" /><br/><i>Pisahkan nama dengan tanda koma. Contoh: angga,humar,lanang</i><br/> 
+      total best of:
+      <select id="b" name="b">
+        <option value="5">5</option>
+        <option value="7">7</option>
+        <option value="9">9</option>
+        <option value="25">25</option>
+        <option value="75">75</option>
+        <option value="99">99</option>
+      </select>
+      <br/><br/>
+      <a id="hit" class="tombol" href="javascript:void(0)">Find Winner</a>
+    </div>
+    <hr/>
+    <div id="hasil"></div>
+  </body>
 </html>
