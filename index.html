@@ -21,11 +21,11 @@
           for (var i = 1; i <= b; i++) {
             var tmp = a[Math.floor(Math.random() * a.length)];
             h2[tmp]++;
-            hd += "random ke " + i + ": " + tmp + " / "+ t +"<br/>";
+            hd += "random ke " + i + ": " + tmp + "<br/>";
           }
-          h += '<br/>total kemunculan random:<br/>';
+          h += 'total kemunculan:<br/>';
           $.each(h2, function(key, value) {
-            h += key+": "+value+"<br/>";
+            h += key+": "+value+" / "+ t +"<br/>";
           });
           $("#hasil").html(h+"<hr/>Detail:<br/>"+hd);
         });
@@ -43,7 +43,8 @@
   <body>
     <h2>PoGo Raid Selatan Kota Jogja Quiz Winner Selector</h2>
     <div>
-      daftar kandidat pemenang: <input type="text" name="w" value="" /><br/><i>Pisahkan nama dengan tanda koma. Contoh: angga,humar,lanang</i><br/> 
+      daftar kandidat pemenang: <input type="text" name="w" value="" /><br/><i>Pisahkan nama dengan tanda koma. Contoh: angga,humar,lanang</i>
+      <br/><br/>
       total best of:
       <select id="b" name="b">
         <option value="5">5</option>
