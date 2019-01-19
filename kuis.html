@@ -11,27 +11,28 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   </head>
   <body>
-    <div class="rtext"><a href="index.html">&laquo; kembali ke halaman utama</a></div>
-	<h2>PoGo Raid Selatan Kota Jogja Quiz Winner Selector</h2>
-	<div>
-      nama kuis: <input type="text" name="n" value="" size="55" style="margin-bottom:4px"/><br/>
-      daftar kandidat pemenang: <input type="text" name="w" value="" /><br/><i>Pisahkan nama dengan tanda koma. Contoh: angga,humar,lanang</i>
-      <br/><br/>
-      total best of:
-      <select id="b" name="b">
-        <option value="5">5</option>
-        <option value="7">7</option>
-        <option value="9">9</option>
-        <option value="25">25</option>
-        <option value="75">75</option>
-        <option value="99" selected>99</option>
-      </select>
-      <br/><br/>
-      <a id="hit" class="tombol" href="javascript:void(0)">Find Winner</a>
-    </div>
-    <hr/>
-    <div id="hasil"></div>
-	
+	<div id="dmain">
+		<div class="rtext"><a href="index.html">&laquo; kembali ke halaman utama</a></div>
+		<h2>PoGo Raid Selatan Kota Jogja Quiz Winner Selector</h2>
+		<div>
+		  nama kuis: <input type="text" name="n" value="" size="35" style="margin-bottom:4px"/><br/>
+		  daftar kandidat pemenang: <input type="text" name="w" value="" /><br/><i>Pisahkan nama dengan tanda koma. Contoh: angga,humar,lanang</i>
+		  <br/><br/>
+		  total best of:
+		  <select id="b" name="b">
+			<option value="5">5</option>
+			<option value="7">7</option>
+			<option value="9">9</option>
+			<option value="25">25</option>
+			<option value="75">75</option>
+			<option value="99" selected>99</option>
+		  </select>
+		  <br/><br/>
+		  <a id="hit" class="tombol" href="javascript:void(0)">Find Winner</a>
+		</div>
+		<hr/>
+		<div id="hasil"></div>
+	</div>
 	<script>
     $(document).ready(function() {
 		$("#hit").click(function() {

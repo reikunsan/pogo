@@ -14,10 +14,12 @@
 	<script type="application/javascript" src="js/qrcode/qrcodegen.js"></script>
   </head>
   <body>
-	<div class="rtext"><a href="index.html">&laquo; kembali ke halaman utama</a></div>
-    <h2>PoGo Raid Selatan Kota Jogja Member List</h2>
-    <div id="hasil"></div>
-	
+	<div id="dmain">
+		<div class="rtext"><a href="index.html">&laquo; kembali ke halaman utama</a></div>
+		<h2>PoGo Raid Selatan Kota Jogja Member List</h2>
+		<div id="hasil"></div>
+	</div>
+		
 	<!-- dialog -->
 	<div id="dialog" title="Trainer Code">
 		<div class="konten">
@@ -28,7 +30,7 @@
 			</svg>
 		</div>
 	</div>
-
+	
 	<script>
 	function redrawQrCode(teks) {
 		// Reset output images in case of early termination
