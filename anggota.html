@@ -96,8 +96,9 @@
 	}
 	$(document).ready(function() {
 		redrawQrCode("shineofthedark <at> gmail");
+		var t = new Date().getTime() / 1000;
 		$("#dialog").dialog({ autoOpen: false, modal: true, width: '96%', height: $(window).height() });
-		$.get('anggota.txt', function(data) {
+		$.get('anggota.txt?v='+t, function(data) {
 			var lines = data.split("\n");
 			var i = 0;
 			var hasil = '';
