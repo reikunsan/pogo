@@ -17,6 +17,7 @@
 	<div id="dmain">
 		<div class="rtext"><a href="index.html">&laquo; kembali ke halaman utama</a></div>
 		<h2>PoGo Raid Selatan Kota Jogja Member List</h2>
+		<div><i>data asli dapat dilihat di https://reikunsan.github.io/pogo/anggota.txt</i></div>
 		<div id="hasil"></div>
 	</div>
 		
@@ -91,7 +92,7 @@
 	}
 	function displayCode(trainer_name, trainer_code) {
 		redrawQrCode(trainer_code);
-		$("#dialog").dialog('option', 'title', trainer_name+' Trainer Code');
+		$("#dialog").dialog('option', 'title', trainer_name+' Trainer Code ('+trainer_code+')');
 		$("#dialog").dialog("open");
 	}
 	$(document).ready(function() {
