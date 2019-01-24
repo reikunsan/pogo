@@ -1,6 +1,6 @@
 html, body { height:100%; margin:0; padding:0; }
 #dmain { padding:12px; }
-#dfoot { width:100%;text-align:center;position:fixed;bottom:6px;left:12px; }
+#dfoot { width:100%;text-align:center;position:fixed;bottom:6px;left:12px;background:#FFFFFF; }
 .rtext { text-align:right; }
 
 .dtable { border-collapse:collapse;width:100%; }
