@@ -127,7 +127,6 @@
 		$.get('anggota.txt?v='+t, function(data) {
 			lines = data.split("\n");
 		}).done(function() {
-			$('#hasil').html(lines.toString());
 			if(p['urut']!="1") lines = shuffle(lines);
 			var i = 0;
 			var hasil = '';
