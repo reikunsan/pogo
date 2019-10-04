@@ -1,1 +1,1 @@
-#PoGo Raid Selatan Kota Jogja Utilities
+#PoGo Xaga Trainers Jogja Utilities
