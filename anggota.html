@@ -98,8 +98,8 @@
 	}
 	function displayCode(trainer_name, trainer_code) {
 		redrawQrCode(trainer_code);
-		$("#trainer_code").html(trainer_code);
-		$("#dialog").dialog('option', 'title', trainer_name+' Trainer Code ('+trainer_code+')');
+		$("#trainer_code").html('trainer code: '+trainer_code);
+		$("#dialog").dialog('option', 'title', trainer_name);
 		$("#dialog").dialog("open");
 	}
 	function shuffle(arr) {
