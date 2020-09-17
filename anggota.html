@@ -29,6 +29,7 @@
 	<!-- dialog -->
 	<div id="dialog" title="Trainer Code">
 		<div class="konten">
+			<div id='trainer_code'></div>
 			<canvas id="qrcode-canvas" style="padding:1em; background-color:#E8E8E8"></canvas>
 			<svg id="qrcode-svg" style="width:30em; height:30em; padding:1em; background-color:#E8E8E8">
 				<rect width="100%" height="100%" fill="#FFFFFF" stroke-width="0"></rect>
@@ -97,6 +98,7 @@
 	}
 	function displayCode(trainer_name, trainer_code) {
 		redrawQrCode(trainer_code);
+		$("#trainer_code").html(trainer_code);
 		$("#dialog").dialog('option', 'title', trainer_name+' Trainer Code ('+trainer_code+')');
 		$("#dialog").dialog("open");
 	}
